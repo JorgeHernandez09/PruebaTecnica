@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html class="dark" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Jorge Hernández - Desarrollador Web</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<style>
+    .material-icons {
+      font-family: 'Material Icons';
+      font-weight: normal;
+      font-style: normal;
+      font-size: 24px;
+      display: inline-block;
+      line-height: 1;
+      text-transform: none;
+      letter-spacing: normal;
+      word-wrap: normal;
+      white-space: nowrap;
+      direction: ltr;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+      -moz-osx-font-smoothing: grayscale;
+      font-feature-settings: 'liga';
+    }
+  </style>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#0099D4",
+            "background-light": "#F3F4F6",
+            "background-dark": "#0B1519",
+            "text-light": "#1F2937",
+            "text-dark": "#E5E7EB",
+            "card-light": "#FFFFFF",
+            "card-dark": "#111827",
+          },
+          fontFamily: {
+            display: ["Montserrat", "sans-serif"],
+          },
+          borderRadius: {
+            DEFAULT: "0.5rem",
+          },
+        },
+      },
+    };
+  </script>
+</head>
+<body class="font-display bg-background-dark text-text-dark">
+<nav class="bg-background-dark py-4 px-4 sm:px-6 lg:px-8 shadow-md sticky top-0 z-50" id="navbar">
+<div class="container mx-auto flex justify-between items-center">
+<a class="text-xl font-bold text-text-dark" href="#">JH</a>
+<div class="hidden md:flex items-center space-x-6">
+<a class="hover:text-primary transition-colors" href="#hero">Inicio</a>
+<a class="hover:text-primary transition-colors" href="#about">Acerca de mí</a>
+<a class="hover:text-primary transition-colors" href="#technologies">Tecnologías</a>
+<a class="hover:text-primary transition-colors" href="#experience">Experiencia</a>
+<a class="hover:text-primary transition-colors" href="#projects">Proyectos</a>
+<a class="hover:text-primary transition-colors" href="#contact">Contacto</a>
+</div>
+<div class="flex items-center space-x-4">
+<a class="text-text-dark hover:text-primary transition-colors" href="#">
+<svg class="feather feather-github" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+</a>
+<a class="text-text-dark hover:text-primary transition-colors" href="#">
+<svg class="feather feather-linkedin" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect height="12" width="4" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+</a>
+</div>
+<div class="md:hidden">
+<button class="text-text-dark focus:outline-none" id="menu-btn">
+<span class="material-icons">menu</span>
+</button>
+</div>
+</div>
+<div class="hidden md:hidden mt-4" id="mobile-menu">
+<a class="block py-2 px-4 text-sm hover:bg-gray-700 rounded" href="#hero">Inicio</a>
+<a class="block py-2 px-4 text-sm hover:bg-gray-700 rounded" href="#about">Acerca de mí</a>
+<a class="block py-2 px-4 text-sm hover:bg-gray-700 rounded" href="#technologies">Tecnologías</a>
+<a class="block py-2 px-4 text-sm hover:bg-gray-700 rounded" href="#experience">Experiencia</a>
+<a class="block py-2 px-4 text-sm hover:bg-gray-700 rounded" href="#projects">Proyectos</a>
+<a class="block py-2 px-4 text-sm hover:bg-gray-700 rounded" href="#contact">Contacto</a>
+</div>
+</nav>
+<main>
+<section class="min-h-screen flex items-center justify-center text-center px-4 sm:px-6 lg:px-8" id="hero">
+<div class="max-w-4xl mx-auto">
+<h1 class="text-5xl md:text-7xl font-bold text-text-dark mb-4">Jorge Hernández</h1>
+<p class="text-xl md:text-2xl text-text-dark mb-6">Desarrollador Web Junior apasionado por crear aplicaciones web responsivas y fáciles de usar.</p>
+<p class="text-lg text-gray-400 max-w-2xl mx-auto mb-8">
+          Tengo conocimientos en tecnologías web modernas, incluyendo HTML, CSS y JavaScript, con experiencia práctica en la construcción de interfaces dinámicas con React y backends robustos con Node.js.
+          Estoy buscando activamente oportunidades para contribuir a proyectos innovadores y hacer crecer mis habilidades dentro de un entorno de equipo colaborativo y dinámico.
+        </p>
+<a class="bg-primary text-white font-semibold py-3 px-8 rounded hover:bg-opacity-90 transition-colors" href="#about">
+          Ver Perfil Completo
+        </a>
+</div>
+</section>
+<section class="py-20 px-4 sm:px-6 lg:px-8 bg-background-dark" id="about">
+<div class="container mx-auto">
+<h2 class="text-4xl font-bold text-center mb-12 text-text-dark">Acerca de mí</h2>
+<div class="flex flex-col md:flex-row items-center gap-12">
+<div class="md:w-2/3">
+<h3 class="text-2xl font-bold text-primary mb-2">Jorge Hernández</h3>
+<p class="text-lg mb-6 text-gray-400">
+              Soy un desarrollador web junior apasionado por crear aplicaciones web innovadoras y fáciles de usar. Mi viaje al mundo del desarrollo web comenzó con una fascinación por cómo funcionan los sitios web, y desde entonces me he enganchado. Estoy ansioso por contribuir con mis habilidades y entusiasmo a un equipo dinámico, donde pueda continuar aprendiendo y creciendo como desarrollador.
+            </p>
+<h4 class="text-xl font-bold mb-4 text-text-dark">Intereses</h4>
+<p class="text-lg mb-8 text-gray-400">
+              Más allá de la codificación, estoy profundamente interesado en tecnologías emergentes como la IA y blockchain. Disfruto explorando sus posibles aplicaciones y manteniéndome actualizado con los últimos avances. También tengo un gran interés en el diseño UI/UX, esforzándome por crear interfaces intuitivas y visualmente atractivas que mejoren la experiencia del usuario.
+            </p>
+<a class="bg-primary text-white font-semibold py-3 px-8 rounded hover:bg-opacity-90 transition-colors" href="#projects">
+              Ver Mis Proyectos
+            </a>
+</div>
+<div class="md:w-1/3">
+<div class="bg-card-dark rounded-lg p-6 w-full h-80 flex items-center justify-center shadow-lg">
+<span class="text-gray-500">Espacio para foto</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-900" id="technologies">
+<div class="container mx-auto text-center">
+<h2 class="text-4xl font-bold mb-12 text-text-dark">Tecnologías que uso</h2>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+<div class="flex flex-col items-center">
+<div class="p-4 bg-primary/20 rounded-full mb-4">
+<span class="material-icons text-primary text-4xl">code</span>
+</div>
+<p class="font-semibold text-lg">HTML</p>
+</div>
+<div class="flex flex-col items-center">
+<div class="p-4 bg-primary/20 rounded-full mb-4">
+<span class="material-icons text-primary text-4xl">css</span>
+</div>
+<p class="font-semibold text-lg">CSS</p>
+</div>
+<div class="flex flex-col items-center">
+<div class="p-4 bg-primary/20 rounded-full mb-4">
+<span class="material-icons text-primary text-4xl">javascript</span>
+</div>
+<p class="font-semibold text-lg">JavaScript</p>
+</div>
+<div class="flex flex-col items-center">
+<div class="p-4 bg-primary/20 rounded-full mb-4">
+<svg class="h-10 w-10 text-primary" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-12h2v2h-2v-2zm-1-3h4v2h-4v-2zm-2 6h2v2h-2v-2zm12 0h2v2h-2v-2zm-5 5h2v2h-2v-2zm-7-2h2v2H6v-2zm12 0h2v2h-2v-2z" opacity=".3"></path><path d="M12 4c-4.41 0-8 3.59-8 8s3.59 8 8 8 8-3.59 8-8-3.59-8-8-8zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"></path><path d="M11 5h2v2h-2zm-3 4h2v2H8zm8 0h2v2h-2zm-4 4h2v2h-2z"></path></svg>
+</div>
+<p class="font-semibold text-lg">React</p>
+</div>
+<div class="flex flex-col items-center">
+<div class="p-4 bg-primary/20 rounded-full mb-4">
+<svg class="h-10 w-10 text-primary" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9 3h6v2H9z" opacity=".3"></path><path d="M19 12v-2h-2v2h-2v2h2v2h2v-2h2v-2h-2zm-7.17 4.76l-1.41 1.41L9 16.75l-1.42 1.41-1.41-1.41L7.59 15.34l-1.42-1.41 1.41-1.41L9 13.94l1.42-1.41 1.41 1.41L10.41 15.34l1.42 1.42zM12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9c.64 0 1.27-.07 1.87-.2l.23-.06-1.57-1.57c-.17.02-.34.03-.51.03-3.86 0-7-3.14-7-7s3.14-7 7-7 7 3.14 7 7c0 .17-.01.34-.03.51l1.57 1.57.06-.23C21 13.27 21.07 12.64 21.07 12c0-4.97-4.03-9-9.07-9z"></path></svg>
+</div>
+<p class="font-semibold text-lg">Node.js</p>
+</div>
+<div class="flex flex-col items-center">
+<div class="p-4 bg-primary/20 rounded-full mb-4">
+<span class="material-icons text-primary text-4xl">storage</span>
+</div>
+<p class="font-semibold text-lg">SQL</p>
+</div>
+<div class="flex flex-col items-center">
+<div class="p-4 bg-primary/20 rounded-full mb-4">
+<span class="material-icons text-primary text-4xl">brightness_auto</span>
+</div>
+<p class="font-semibold text-lg">Git</p>
+</div>
+<div class="flex flex-col items-center">
+<div class="p-4 bg-primary/20 rounded-full mb-4">
+<span class="material-icons text-primary text-4xl">email</span>
+</div>
+<p class="font-semibold text-lg">REST API</p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 px-4 sm:px-6 lg:px-8 bg-background-dark" id="experience">
+<div class="container mx-auto">
+<h2 class="text-4xl font-bold text-center mb-12 text-text-dark">Experiencia Laboral</h2>
+<div class="max-w-3xl mx-auto">
+<div class="relative pl-8 border-l-2 border-primary">
+<div class="mb-10">
+<div class="absolute w-6 h-6 bg-primary rounded-full -left-3.5 border-4 border-background-dark"></div>
+<div class="bg-card-dark p-6 rounded-lg shadow-md">
+<p class="text-sm text-gray-400 mb-1">Enero 2023 - Presente</p>
+<h3 class="text-xl font-bold mb-2 text-text-dark">Desarrollador Web Junior</h3>
+<p class="text-md font-semibold text-primary mb-3">Empresa Innovadora S.A.</p>
+<p class="text-gray-400">
+                                Desarrollo y mantenimiento de aplicaciones web utilizando React y Node.js. Colaboración en el diseño de interfaces de usuario y optimización del rendimiento.
+                            </p>
+</div>
+</div>
+<div class="mb-10">
+<div class="absolute w-6 h-6 bg-primary rounded-full -left-3.5 border-4 border-background-dark"></div>
+<div class="bg-card-dark p-6 rounded-lg shadow-md">
+<p class="text-sm text-gray-400 mb-1">Junio 2022 - Diciembre 2022</p>
+<h3 class="text-xl font-bold mb-2 text-text-dark">Pasante de Desarrollo Frontend</h3>
+<p class="text-md font-semibold text-primary mb-3">Tech Solutions Co.</p>
+<p class="text-gray-400">
+                                Asistencia en la creación de componentes de UI con HTML, CSS y JavaScript. Participación en pruebas y depuración de código.
+                            </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-900" id="projects">
+<div class="container mx-auto">
+<h2 class="text-4xl font-bold text-center mb-12 text-text-dark">Proyectos</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="bg-card-dark rounded-lg shadow-lg overflow-hidden">
+<img alt="Laptop con código en la pantalla" class="w-full h-48 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATFLCKcf_mTlx0krNNBqtvAORIS8t0Jvho9d7ltsqSK-R5MUtlBJEQTEL9vDUPMVoPM9UW2hOpTO7Qw5vY2Ia5mvNnAjM4wx4TLqGOTex6esV4vJKYQfEyNcauY5BEcxDowcs1CTQnCWJDK8NGiVcELu7hV32DbYeyoIj1jLmyRg6oMOpKjg8zp8QOn4N3ovtcfYS1EC567O_NtfoqkkuH3qdOI5IYb-FcIvems4uL4jyznmo486VPlBUI32Iujoa8m6syzsTr0dY8"/>
+<div class="p-6">
+<h3 class="text-xl font-bold mb-2 text-text-dark">Proyecto 1</h3>
+<p class="text-gray-400 mb-4">Una breve descripción de este increíble proyecto que muestra mis habilidades y creatividad.</p>
+<div class="flex justify-end">
+<a class="text-primary hover:underline" href="#">Ver más</a>
+</div>
+</div>
+</div>
+<div class="bg-card-dark rounded-lg shadow-lg overflow-hidden">
+<img alt="Código en un monitor oscuro" class="w-full h-48 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_m1e7-17v6k41tU1LWduGbY2Yt3vLHfd2us_Gy7-lfBAt8km2N1HEU_ZssaxzdK3-aWEmkI4RntZVK9ar5N01YhL3aFbPS6ais0OCORuXvFCAOm9Usc3EacKtGEsnoWadD__b2_8Q0cbfXZI2MJtH1xab7oL-g5BtUTWzvn8YovpsvHGj-kLgT5dl2Cs5woxvy_-B9JaNEz-JY-wnf59hUcQuDG_12o5rLrOUAinpmszlBjDqNIph0bJ3b6mwSrKiriNEHuiz7qh1"/>
+<div class="p-6">
+<h3 class="text-xl font-bold mb-2 text-text-dark">Proyecto 2</h3>
+<p class="text-gray-400 mb-4">Otro proyecto interesante que demuestra mi capacidad para resolver problemas y construir soluciones.</p>
+<div class="flex justify-end">
+<a class="text-primary hover:underline" href="#">Ver más</a>
+</div>
+</div>
+</div>
+<div class="bg-card-dark rounded-lg shadow-lg overflow-hidden">
+<img alt="Escritorio con laptop, monitor y café" class="w-full h-48 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEuOM5yFTFhYNe_Z_0OtrFJrnfnwOMH2PyPSKuG8MZI3b9HMC22gMQhw48JWtfxbEHVuJt6FWOowaL1tvWxkN76S3KTmX1HnXXkbbOieqx3wjjQzO5uQVEXmf-zom6ASqUkqSzTQf9WohxqZzgPiGsyF3fi-Y5loxUhGnmLTIS61YyyMGJ65QKRFM7nVBEsTwjDcZUx2vu0PFONK9GcSb5ixtD3qdOmmYMUwHuBAUOI0gFu4lI0InHqKqNx5gudK4lStumQsuPhchq"/>
+<div class="p-6">
+<h3 class="text-xl font-bold mb-2 text-text-dark">Proyecto 3</h3>
+<p class="text-gray-400 mb-4">Un proyecto desafiante que me permitió crecer como desarrollador y aprender nuevas tecnologías.</p>
+<div class="flex justify-end">
+<a class="text-primary hover:underline" href="#">Ver más</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 px-4 sm:px-6 lg:px-8 bg-background-dark" id="contact">
+<div class="container mx-auto max-w-2xl text-center">
+<h2 class="text-4xl font-bold mb-4 text-text-dark">Contacto</h2>
+<p class="text-lg text-gray-400 mb-8">
+          Siempre estoy abierto a discutir nuevos proyectos, ideas creativas u oportunidades para ser parte de tus visiones. ¡No dudes en contactarme!
+        </p>
+<form action="#" class="space-y-6 text-left">
+<div>
+<label class="block text-sm font-medium text-gray-300" for="name">Nombre</label>
+<input class="mt-1 block w-full px-3 py-2 bg-gray-800 border border-gray-600 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-primary focus:border-primary" id="name" name="name" placeholder="Tu Nombre" type="text"/>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-300" for="email">Correo electrónico</label>
+<input class="mt-1 block w-full px-3 py-2 bg-gray-800 border border-gray-600 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-primary focus:border-primary" id="email" name="email" placeholder="Tu Correo Electrónico" type="email"/>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-300" for="message">Mensaje</label>
+<textarea class="mt-1 block w-full px-3 py-2 bg-gray-800 border border-gray-600 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-primary focus:border-primary" id="message" name="message" placeholder="Tu Mensaje" rows="4"></textarea>
+</div>
+<div class="text-center">
+<button class="bg-primary text-white font-semibold py-3 px-8 rounded hover:bg-opacity-90 transition-colors" type="submit">
+              Enviar Mensaje
+            </button>
+</div>
+</form>
+</div>
+</section>
+</main>
+<footer class="bg-background-dark py-6 px-4 sm:px-6 lg:px-8 border-t border-gray-700">
+<div class="container mx-auto text-center text-gray-400">
+<p>© 2024 Jorge Hernández. Todos los derechos reservados.</p>
+<div class="flex justify-center space-x-4 mt-4">
+<a class="hover:text-primary transition-colors" href="#">
+<svg class="feather feather-github" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+</a>
+<a class="hover:text-primary transition-colors" href="#">
+<svg class="feather feather-linkedin" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect height="12" width="4" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+</a>
+</div>
+</div>
+</footer>
+<script>
+    document.getElementById('menu-btn').addEventListener('click', function() {
+        document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+    // Smooth scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+            // Close mobile menu on click
+            if (document.getElementById('mobile-menu').classList.contains('hidden') === false) {
+                 document.getElementById('mobile-menu').classList.add('hidden');
+            }
+        });
+    });
+  </script>
+</body></html>
