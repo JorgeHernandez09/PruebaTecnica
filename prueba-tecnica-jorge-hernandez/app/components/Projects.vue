@@ -4,32 +4,23 @@ import texts from "~/texts/text.json";
 
 <template>
   <section class="projects" id="projects">
-      <div class="projects__container">
-        <h2 class="projects__title">{{ texts.projects.title }}</h2>
-        <div class="projects__container--project">
-          <div v-for="(project, index) in texts.projects.items" :key="index">
-            <img
-              :alt="project.imageAlt"
-              class="projects__photo"
-              :src="project.imageSrc || ''" 
-            />
-            <h3 class="projects__subtitle">{{ project.title }}</h3>
-            <p class="projects__description">{{ project.description }}</p>
-            <a class="projects__button" href="#">{{ project.button }}</a>
-          </div>
+    <div class="projects__container">
+      <h2 class="projects__title">{{ texts.projects.title }}</h2>
+      <div class="projects__container--project">
+        <div class="projects__container--project-primary" v-for="(project, index) in texts.projects.items" :key="index">
+          <img :alt="project.imageAlt" class="projects__photo" :src="project.imageSrc || ''" />
+          <h3 class="projects__subtitle">{{ project.title }}</h3>
+          <p class="projects__description">{{ project.description }}</p>
+          <a class="projects__button" href="#">{{ project.button }}</a>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
 </template>
 
 <style scoped lang="scss">
 @import "~/assets/styles/reset.scss";
-
-
-
-
-
 
 .projects {
   min-height: 80dvh;
@@ -45,14 +36,24 @@ import texts from "~/texts/text.json";
     justify-content: center;
     margin-bottom: 3em;
 
+
     &--project {
-      max-width: 75em;
+      max-width: auto;
+      margin: 1em;
+      padding: 1em;
       display: flex;
       flex-direction: row;
       justify-content: center;
       gap: 8em;
       text-align: left;
+
+      &-primary {
+        padding: 1.5em;
+        box-shadow: 0 0.125em 0.25em rgba(0, 0, 0, 0.2);
+        border-radius: 2em;
+      }
     }
+
   }
 
   &__title {
@@ -100,6 +101,4 @@ import texts from "~/texts/text.json";
     }
   }
 }
-
-
 </style>

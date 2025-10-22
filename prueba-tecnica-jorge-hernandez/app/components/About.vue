@@ -3,16 +3,16 @@ import texts from "~/texts/text.json";
 </script>
 
 <template>
-  <section class="about" id="about">
-    <div class="about__container">
-      <h2 class="about__title">{{ texts.about.title }}</h2>
-      <h3 class="about__subtitle--name">{{ texts.about.name }}</h3>
-      <p class="about__description">{{ texts.about.description1 }}</p>
-      <h4 class="about__subtitle">{{ texts.about.interestsTitle }}</h4>
-      <p class="about__description">{{ texts.about.description2 }}</p>
-      <a class="about__button" href="#projects">{{ texts.about.button }}</a>
-    </div>
-  </section>
+    <section class="about" id="about">
+        <div class="about__container">
+            <h2 class="about__title">{{ texts.about.title }}</h2>
+            <h3 class="about__subtitle--name">{{ texts.about.name }}</h3>
+            <p class="about__description">{{ texts.about.description1 }}</p>
+            <h4 class="about__subtitle">{{ texts.about.interestsTitle }}</h4>
+            <p class="about__description">{{ texts.about.description2 }}</p>
+            <a class="about__button" href="#projects">{{ texts.about.button }}</a>
+        </div>
+    </section>
 </template>
 
 <style scoped lang="scss">
@@ -47,6 +47,7 @@ import texts from "~/texts/text.json";
         font-size: 1.25em;
         margin-bottom: 0em;
         color: $text-dark;
+
         &--name {
             font-size: 1.25em;
             color: $primary;
@@ -78,5 +79,4 @@ import texts from "~/texts/text.json";
         }
     }
 }
-
 </style>

@@ -7,11 +7,7 @@ import texts from "~/texts/text.json";
     <div class="technologies__container">
       <h2 class="technologies__title">{{ texts.technologies.title }}</h2>
       <div class="technologies__container--languages">
-        <p
-          v-for="(language, index) in texts.technologies.languages"
-          :key="index"
-          class="technologies__subtitle"
-        >
+        <p v-for="(language, index) in texts.technologies.languages" :key="index" class="technologies__subtitle">
           {{ language }}
         </p>
       </div>
@@ -62,11 +58,11 @@ import texts from "~/texts/text.json";
       }
     }
   }
-  
+
   &__title {
-    
+
     font-size: 2.5em;
-     font-weight: bold;
+    font-weight: bold;
     color: $text-dark;
     line-height: 1.75em;
     margin-bottom: 1.5em;
@@ -74,11 +70,10 @@ import texts from "~/texts/text.json";
 
   &__subtitle {
     font-size: 1.25em;
-     font-weight: bold;
+    font-weight: bold;
     color: $text-dark;
     line-height: 1.75em;
     margin-bottom: 1.5em;
   }
 }
-
 </style>

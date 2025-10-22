@@ -38,6 +38,7 @@ import texts from "~/texts/text.json";
     max-width: 40em;
     align-items: center;
     width: 100%;
+    
 
     &--experiences {
       background-color: rgb(17 24 39);
@@ -49,6 +50,7 @@ import texts from "~/texts/text.json";
       padding: 2em;
       margin-bottom: 3em;
       text-align: left;
+      box-shadow: 0 0.125em 0.25em rgba(0, 0, 0, 0.2);
 
       @media (max-width: 37.5em) {
         width: 100%;

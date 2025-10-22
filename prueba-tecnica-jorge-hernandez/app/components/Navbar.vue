@@ -3,19 +3,19 @@ import texts from "~/texts/text.json";
 </script>
 
 <template>
-    <nav id="navbar" class="navbar">
-      <div class="navbar__container">
-        <a href="#" class="navbar__logo">{{ texts.navbar.logo }}</a>
-        <div class="navbar__links">
-          <a href="#hero" class="navbar__link">{{ texts.navbar.links.inicio }}</a>
-          <a href="#about" class="navbar__link">{{ texts.navbar.links.acercaDeMi }}</a>
-          <a href="#technologies" class="navbar__link">{{ texts.navbar.links.tecnologias }}</a>
-          <a href="#experience" class="navbar__link">{{ texts.navbar.links.experiencia }}</a>
-          <a href="#projects" class="navbar__link">{{ texts.navbar.links.proyectos }}</a>
-          <a href="#contact" class="navbar__link">{{ texts.navbar.links.contacto }}</a>
-        </div>
+  <nav id="navbar" class="navbar">
+    <div class="navbar__container">
+      <a href="#" class="navbar__logo">{{ texts.navbar.logo }}</a>
+      <div class="navbar__links">
+        <a href="#hero" class="navbar__link">{{ texts.navbar.links.inicio }}</a>
+        <a href="#about" class="navbar__link">{{ texts.navbar.links.acercaDeMi }}</a>
+        <a href="#technologies" class="navbar__link">{{ texts.navbar.links.tecnologias }}</a>
+        <a href="#experience" class="navbar__link">{{ texts.navbar.links.experiencia }}</a>
+        <a href="#projects" class="navbar__link">{{ texts.navbar.links.proyectos }}</a>
+        <a href="#contact" class="navbar__link">{{ texts.navbar.links.contacto }}</a>
       </div>
-    </nav>
+    </div>
+  </nav>
 
 </template>
 
@@ -36,15 +36,15 @@ import texts from "~/texts/text.json";
     max-width: 95em;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: auto auto auto ;
+    grid-template-columns: auto auto auto;
     align-items: center;
     position: relative;
   }
 
   &__logo {
-    justify-self: center ;
+    justify-self: center;
     font-size: 1.5em;
-    font-weight: bodl;
+    font-weight: bold;
     color: $text-dark;
     text-decoration: none;
   }
@@ -100,5 +100,4 @@ import texts from "~/texts/text.json";
     }
   }
 }
-
 </style>
