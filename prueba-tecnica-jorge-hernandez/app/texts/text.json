@@ -1,0 +1,100 @@
+{
+  "navbar": {
+    "logo": "JH",
+    "links": {
+      "inicio": "Inicio",
+      "acercaDeMi": "Acerca de mí",
+      "tecnologias": "Tecnologías",
+      "experiencia": "Experiencia",
+      "proyectos": "Proyectos",
+      "contacto": "Contacto"
+    }
+  },
+  "hero": {
+    "title": "Jorge Hernández",
+    "subtitle": "Desarrollador Web Junior apasionado por crear aplicaciones web responsivas y fáciles de usar.",
+    "description": "Tengo conocimientos en tecnologías web modernas, incluyendo HTML, CSS y JavaScript, con experiencia práctica en la construcción de interfaces dinámicas con React y backends robustos con Node.js. Estoy buscando activamente oportunidades para contribuir a proyectos innovadores y hacer crecer mis habilidades dentro de un entorno de equipo colaborativo y dinámico.",
+    "button": "Ver Perfil Completo",
+    "photoPlaceholder": "Espacio para foto"
+  },
+  "about": {
+    "title": "Acerca de mí",
+    "name": "Jorge Hernández",
+    "description1": "Soy un desarrollador web junior apasionado por crear aplicaciones web innovadoras y fáciles de usar. Mi viaje al mundo del desarrollo web comenzó con una fascinación por cómo funcionan los sitios web, y desde entonces me he enganchado. Estoy ansioso por contribuir con mis habilidades y entusiasmo a un equipo dinámico, donde pueda continuar aprendiendo y creciendo como desarrollador.",
+    "interestsTitle": "Intereses",
+    "description2": "Más allá de la codificación, estoy profundamente interesado en tecnologías emergentes como la IA y blockchain. Disfruto explorando sus posibles aplicaciones y manteniéndome actualizado con los últimos avances. También tengo un gran interés en el diseño UI/UX, esforzándome por crear interfaces intuitivas y visualmente atractivas que mejoren la experiencia del usuario.",
+    "button": "Ver Mis Proyectos"
+  },
+  "technologies": {
+    "title": "Tecnologías que uso",
+    "languages": ["HTML", "CSS", "JavaScript", "SQL", "Git"]
+  },
+  "experience": {
+    "title": "Experiencia Laboral",
+    "jobs": [
+      {
+        "date": "Enero 2023 - Presente",
+        "position": "Desarrollador Web Junior",
+        "company": "Empresa Innovadora S.A.",
+        "description": "Desarrollo y mantenimiento de aplicaciones web utilizando React y Node.js. Colaboración en el diseño de interfaces de usuario y optimización del rendimiento."
+      },
+      {
+        "date": "Junio 2022 - Diciembre 2022",
+        "position": "Pasante de Desarrollo Frontend",
+        "company": "Tech Solutions Co.",
+        "description": "Asistencia en la creación de componentes de UI con HTML, CSS y JavaScript. Participación en pruebas y depuración de código."
+      }
+    ]
+  },
+  "projects": {
+    "title": "Proyectos",
+    "items": [
+      {
+        "title": "Proyecto 1",
+        "description": "Una breve descripción de este increíble proyecto que muestra mis habilidades y creatividad.",
+        "imageAlt": "Laptop con código en la pantalla",
+        "imageSrc": "https://lh3.googleusercontent.com/aida-public/AB6AXuATFLCKcf_mTlx0krNNBqtvAORIS8t0Jvho9d7ltsqSK-R5MUtlBJEQTEL9vDUPMVoPM9UW2hOpTO7Qw5vY2Ia5mvNnAjM4wx4TLqGOTex6esV4vJKYQfEyNcauY5BEcxDowcs1CTQnCWJDK8NGiVcELu7hV32DbYeyoIj1jLmyRg6oMOpKjg8zp8QOn4N3ovtcfYS1EC567O_NtfoqkkuH3qdOI5IYb-FcIvems4uL4jyznmo486VPlBUI32Iujoa8m6syzsTr0dY8",
+        "button": "Ver más"
+      },
+      {
+        "title": "Proyecto 2",
+        "description": "Otro proyecto interesante que demuestra mi capacidad para resolver problemas y construir soluciones.",
+        "imageAlt": "Código en un monitor oscuro",
+                "imageSrc": "https://lh3.googleusercontent.com/aida-public/AB6AXuC_m1e7-17v6k41tU1LWduGbY2Yt3vLHfd2us_Gy7-lfBAt8km2N1HEU_ZssaxzdK3-aWEmkI4RntZVK9ar5N01YhL3aFbPS6ais0OCORuXvFCAOm9Usc3EacKtGEsnoWadD__b2_8Q0cbfXZI2MJtH1xab7oL-g5BtUTWzvn8YovpsvHGj-kLgT5dl2Cs5woxvy_-B9JaNEz-JY-wnf59hUcQuDG_12o5rLrOUAinpmszlBjDqNIph0bJ3b6mwSrKiriNEHuiz7qh1",
+        "button": "Ver más"
+      },
+      {
+        "title": "Proyecto 3",
+        "description": "Un proyecto desafiante que me permitió crecer como desarrollador y aprender nuevas tecnologías.",
+        "imageAlt": "Escritorio con laptop, monitor y café",
+                "imageSrc": "https://lh3.googleusercontent.com/aida-public/AB6AXuDEuOM5yFTFhYNe_Z_0OtrFJrnfnwOMH2PyPSKuG8MZI3b9HMC22gMQhw48JWtfxbEHVuJt6FWOowaL1tvWxkN76S3KTmX1HnXXkbbOieqx3wjjQzO5uQVEXmf-zom6ASqUkqSzTQf9WohxqZzgPiGsyF3fi-Y5loxUhGnmLTIS61YyyMGJ65QKRFM7nVBEsTwjDcZUx2vu0PFONK9GcSb5ixtD3qdOmmYMUwHuBAUOI0gFu4lI0InHqKqNx5gudK4lStumQsuPhchq",
+
+        "button": "Ver más"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contacto",
+    "description": "Siempre estoy abierto a discutir nuevos proyectos, ideas creativas u oportunidades para ser parte de tus visiones. ¡No dudes en contactarme!",
+    "form": {
+      "labels": {
+        "name": "Nombre",
+        "email": "Correo electrónico",
+        "message": "Mensaje"
+      },
+      "placeholders": {
+        "name": "Tu Nombre",
+        "email": "Tu Correo Electrónico",
+        "message": "Tu Mensaje"
+      },
+      "button": "Enviar Mensaje"
+    }
+  },
+  "footer": {
+    "copyright": "© 2024 Jorge Hernández. Todos los derechos reservados.",
+    "socialLinks": {
+      "github": "",
+      "linkedin": ""
+    }
+  }
+}
