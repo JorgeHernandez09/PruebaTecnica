@@ -8,15 +8,32 @@ import texts from "~/texts/text.json";
       <a href="#" class="navbar__logo">{{ texts.navbar.logo }}</a>
       <div class="navbar__links">
         <a href="#hero" class="navbar__link">{{ texts.navbar.links.inicio }}</a>
-        <a href="#about" class="navbar__link">{{ texts.navbar.links.acercaDeMi }}</a>
-        <a href="#technologies" class="navbar__link">{{ texts.navbar.links.tecnologias }}</a>
-        <a href="#experience" class="navbar__link">{{ texts.navbar.links.experiencia }}</a>
-        <a href="#projects" class="navbar__link">{{ texts.navbar.links.proyectos }}</a>
-        <a href="#contact" class="navbar__link">{{ texts.navbar.links.contacto }}</a>
+        <a href="#about" class="navbar__link">{{
+          texts.navbar.links.acercaDeMi
+        }}</a>
+        <a href="#technologies" class="navbar__link">{{
+          texts.navbar.links.tecnologias
+        }}</a>
+        <a href="#experience" class="navbar__link">{{
+          texts.navbar.links.experiencia
+        }}</a>
+        <a href="#projects" class="navbar__link">{{
+          texts.navbar.links.proyectos
+        }}</a>
+        <a href="#contact" class="navbar__link">{{
+          texts.navbar.links.contacto
+        }}</a>
       </div>
+      <a href="#">
+        <img
+          v-for="(image, index) in texts.navbar.icons"
+          :key="index"
+          :src="image"
+          class="navbar__icons"
+        />
+      </a>
     </div>
   </nav>
-
 </template>
 
 <style scoped lang="scss">
@@ -83,21 +100,9 @@ import texts from "~/texts/text.json";
     }
   }
 
-  &__menu-button {
-    justify-self: end;
-    display: none;
-
-    @media (max-width: 48em) {
-      display: block;
-    }
-
-    button {
-      background: none;
-      border: none;
-      color: $text-dark;
-      cursor: pointer;
-      font-size: 1.5em;
-    }
+  &__icons {
+    width: 2em;
+    height: 2em;    
   }
 }
 </style>

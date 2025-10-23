@@ -8,26 +8,28 @@
       "experiencia": "Experiencia",
       "proyectos": "Proyectos",
       "contacto": "Contacto"
-    }
+    },
+    "icons": ["/img/LinkedIn_icon.png", "/img/GitHub_icon.png"]
   },
   "hero": {
     "title": "Jorge Hernández",
-    "subtitle": "Desarrollador Web Junior apasionado por crear aplicaciones web responsivas y fáciles de usar.",
-    "description": "Tengo conocimientos en tecnologías web modernas, incluyendo HTML, CSS y JavaScript, con experiencia práctica en la construcción de interfaces dinámicas con React y backends robustos con Node.js. Estoy buscando activamente oportunidades para contribuir a proyectos innovadores y hacer crecer mis habilidades dentro de un entorno de equipo colaborativo y dinámico.",
+    "subtitle": "Desarrollador Web Junior apasionado por crear aplicaciones web útiles fáciles de usar.",
+    "description": "Tengo conocimientos en tecnologías web modernas, incluyendo HTML5, CSS y JavaScript. Estoy buscando activamente oportunidades para contribuir a proyectos innovadores y hacer crecer mis habilidades dentro de un entorno de equipo colaborativo y dinámico.",
     "button": "Ver Perfil Completo",
-    "photoPlaceholder": "Espacio para foto"
+    "imageSrc": "/img/profilePhoto.jpg"
   },
   "about": {
     "title": "Acerca de mí",
     "name": "Jorge Hernández",
-    "description1": "Soy un desarrollador web junior apasionado por crear aplicaciones web innovadoras y fáciles de usar. Mi viaje al mundo del desarrollo web comenzó con una fascinación por cómo funcionan los sitios web, y desde entonces me he enganchado. Estoy ansioso por contribuir con mis habilidades y entusiasmo a un equipo dinámico, donde pueda continuar aprendiendo y creciendo como desarrollador.",
+    "description1": "Soy un desarrollador web junior apasionado por crear aplicaciones web innovadoras y fáciles de usar. Mi viaje al mundo del desarrollo web comenzó con una fascinación por cómo funcionan los sitios web. Estoy ansioso por contribuir con mis habilidades y entusiasmo a un equipo dinámico, donde pueda continuar aprendiendo y creciendo como desarrollador.",
     "interestsTitle": "Intereses",
-    "description2": "Más allá de la codificación, estoy profundamente interesado en tecnologías emergentes como la IA y blockchain. Disfruto explorando sus posibles aplicaciones y manteniéndome actualizado con los últimos avances. También tengo un gran interés en el diseño UI/UX, esforzándome por crear interfaces intuitivas y visualmente atractivas que mejoren la experiencia del usuario.",
+    "description2": "Más allá de la codificación, estoy profundamente interesado en tecnologías emergentes como la IA. Disfruto explorando sus posibles aplicaciones y manteniéndome actualizado con los últimos avances. También tengo un gran interés en el diseño UI/UX, esforzándome por crear interfaces intuitivas y visualmente atractivas que mejoren la experiencia del usuario.",
     "button": "Ver Mis Proyectos"
   },
   "technologies": {
     "title": "Tecnologías que uso",
-    "languages": ["HTML", "CSS", "JavaScript", "SQL", "Git"]
+    "languages": ["HTML5", "CSS", "JavaScript", "MySQL", "Git", "TypeScript", "Sass", "Nuxt"],
+    "imageSrc": ["/img/HTML5_logo.png", "/img/CSS_logo.png", "/img/JavaScript_logo.png" , "/img/MySQL_logo.png" , "/img/Git_logo.png", "/img/TypeScript_logo.png", "/img/Sass_logo.png" , "/img/Nuxt_logo.png"]
   },
   "experience": {
     "title": "Experiencia Laboral",
@@ -60,15 +62,14 @@
         "title": "Proyecto 2",
         "description": "Otro proyecto interesante que demuestra mi capacidad para resolver problemas y construir soluciones.",
         "imageAlt": "Código en un monitor oscuro",
-                "imageSrc": "https://lh3.googleusercontent.com/aida-public/AB6AXuC_m1e7-17v6k41tU1LWduGbY2Yt3vLHfd2us_Gy7-lfBAt8km2N1HEU_ZssaxzdK3-aWEmkI4RntZVK9ar5N01YhL3aFbPS6ais0OCORuXvFCAOm9Usc3EacKtGEsnoWadD__b2_8Q0cbfXZI2MJtH1xab7oL-g5BtUTWzvn8YovpsvHGj-kLgT5dl2Cs5woxvy_-B9JaNEz-JY-wnf59hUcQuDG_12o5rLrOUAinpmszlBjDqNIph0bJ3b6mwSrKiriNEHuiz7qh1",
+        "imageSrc": "https://lh3.googleusercontent.com/aida-public/AB6AXuC_m1e7-17v6k41tU1LWduGbY2Yt3vLHfd2us_Gy7-lfBAt8km2N1HEU_ZssaxzdK3-aWEmkI4RntZVK9ar5N01YhL3aFbPS6ais0OCORuXvFCAOm9Usc3EacKtGEsnoWadD__b2_8Q0cbfXZI2MJtH1xab7oL-g5BtUTWzvn8YovpsvHGj-kLgT5dl2Cs5woxvy_-B9JaNEz-JY-wnf59hUcQuDG_12o5rLrOUAinpmszlBjDqNIph0bJ3b6mwSrKiriNEHuiz7qh1",
         "button": "Ver más"
       },
       {
         "title": "Proyecto 3",
         "description": "Un proyecto desafiante que me permitió crecer como desarrollador y aprender nuevas tecnologías.",
         "imageAlt": "Escritorio con laptop, monitor y café",
-                "imageSrc": "https://lh3.googleusercontent.com/aida-public/AB6AXuDEuOM5yFTFhYNe_Z_0OtrFJrnfnwOMH2PyPSKuG8MZI3b9HMC22gMQhw48JWtfxbEHVuJt6FWOowaL1tvWxkN76S3KTmX1HnXXkbbOieqx3wjjQzO5uQVEXmf-zom6ASqUkqSzTQf9WohxqZzgPiGsyF3fi-Y5loxUhGnmLTIS61YyyMGJ65QKRFM7nVBEsTwjDcZUx2vu0PFONK9GcSb5ixtD3qdOmmYMUwHuBAUOI0gFu4lI0InHqKqNx5gudK4lStumQsuPhchq",
-
+        "imageSrc": "https://lh3.googleusercontent.com/aida-public/AB6AXuDEuOM5yFTFhYNe_Z_0OtrFJrnfnwOMH2PyPSKuG8MZI3b9HMC22gMQhw48JWtfxbEHVuJt6FWOowaL1tvWxkN76S3KTmX1HnXXkbbOieqx3wjjQzO5uQVEXmf-zom6ASqUkqSzTQf9WohxqZzgPiGsyF3fi-Y5loxUhGnmLTIS61YyyMGJ65QKRFM7nVBEsTwjDcZUx2vu0PFONK9GcSb5ixtD3qdOmmYMUwHuBAUOI0gFu4lI0InHqKqNx5gudK4lStumQsuPhchq",
         "button": "Ver más"
       }
     ]
@@ -92,9 +93,6 @@
   },
   "footer": {
     "copyright": "© 2024 Jorge Hernández. Todos los derechos reservados.",
-    "socialLinks": {
-      "github": "",
-      "linkedin": ""
-    }
+     "icons": ["/img/LinkedIn_icon.png", "/img/GitHub_icon.png"]
   }
 }

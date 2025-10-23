@@ -6,7 +6,7 @@ import texts from "~/texts/text.json";
   <section class="hero" id="hero">
     <div class="hero__container">
       <div class="photo__placeholder">
-        <span class="hero__photo">{{ texts.hero.photoPlaceholder }}</span>
+        <img class="hero__photo" :src="texts.hero.imageSrc "></img>
       </div>
       <div class="hero__container--text">
         <h1 class="hero__title">{{ texts.hero.title }}</h1>

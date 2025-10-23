@@ -7,10 +7,14 @@ import texts from "~/texts/text.json";
     <div class="footer__container">
       <p>{{ texts.footer.copyright }}</p>
       <div class="footer__social">
-        <a class="footer__link" :href="texts.footer.socialLinks.github">
-        </a>
-        <a class="footer__link" :href="texts.footer.socialLinks.linkedin">
-        </a>
+        <a href="#">
+        <img
+          v-for="(image, index) in texts.footer.icons"
+          :key="index"
+          :src="image"
+          class="footer__icons"
+        />
+      </a>
       </div>
     </div>
   </footer>
@@ -34,22 +38,10 @@ import texts from "~/texts/text.json";
         text-align: center;
         color: #9ca3af;
     }
-
-    &__social {
-        display: flex;
-        justify-content: center;
-        gap: 1rem;
-        margin-top: 1rem;
-    }
-
-    &__link {
-        color: inherit;
-        transition: color 0.3s ease;
-
-        &:hover {
-            color: $primary;
-        }
-    }
+  &__icons {
+    width: 2em;
+    height: 2em;    
+  }
 }
 
 

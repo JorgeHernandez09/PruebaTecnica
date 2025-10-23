@@ -7,19 +7,24 @@ import texts from "~/texts/text.json";
     <div class="technologies__container">
       <h2 class="technologies__title">{{ texts.technologies.title }}</h2>
       <div class="technologies__container--languages">
-        <p v-for="(language, index) in texts.technologies.languages" :key="index" class="technologies__subtitle">
+        <p
+          v-for="(language, index) in texts.technologies.languages"
+          :key="index"
+          class="technologies__subtitle"
+        >
           {{ language }}
+          <img
+            :src="texts.technologies.imageSrc[index]"
+            class="technologies__photo"
+          />
         </p>
       </div>
     </div>
   </section>
 </template>
 
-
 <style scoped lang="scss">
 @import "~/assets/styles/reset.scss";
-
-
 
 .technologies {
   min-height: 30em;
@@ -30,7 +35,6 @@ import texts from "~/texts/text.json";
   text-align: center;
   background-color: rgb(17 24 39);
   margin-bottom: 1em;
-
 
   &__container {
     margin-top: 0;
@@ -43,8 +47,9 @@ import texts from "~/texts/text.json";
 
     &--languages {
       display: grid;
-      grid-template-columns: auto auto auto;
+      grid-template-columns: auto auto auto auto;
       gap: 10em;
+      column-gap: 20em;
       justify-content: center;
 
       @media (max-width: 48em) {
@@ -60,7 +65,6 @@ import texts from "~/texts/text.json";
   }
 
   &__title {
-
     font-size: 2.5em;
     font-weight: bold;
     color: $text-dark;
@@ -74,6 +78,15 @@ import texts from "~/texts/text.json";
     color: $text-dark;
     line-height: 1.75em;
     margin-bottom: 1.5em;
+  }
+
+  &__photo {
+    background-color: $card-dark;
+    width: 4em;
+    height: 4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 </style>

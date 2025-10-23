@@ -8,7 +8,7 @@ import texts from "~/texts/text.json";
       <div class="contact__container">
         <h2 class="contact__title">{{ texts.contact.title }}</h2>
         <p class="contact__description">{{ texts.contact.description }}</p>
-        <form action="#" class="contact__container--form">
+        <form action="#" method="post" class="contact__container--form">
           <label class="contact__subtitle" for="name">
             {{ texts.contact.form.labels.name }}
           </label>
@@ -18,6 +18,7 @@ import texts from "~/texts/text.json";
             name="name"
             :placeholder="texts.contact.form.placeholders.name"
             type="text"
+            required
           />
 
           <label class="contact__subtitle" for="email">
@@ -29,6 +30,7 @@ import texts from "~/texts/text.json";
             name="email"
             :placeholder="texts.contact.form.placeholders.email"
             type="email"
+            required
           />
 
           <label class="contact__subtitle" for="message">
@@ -40,6 +42,7 @@ import texts from "~/texts/text.json";
             name="message"
             :placeholder="texts.contact.form.placeholders.message"
             rows="4"
+            required
           ></textarea>
 
           <button class="contact__button" type="submit">
@@ -99,12 +102,14 @@ import texts from "~/texts/text.json";
   }
 
   &__form {
+    color:white;
     border: 0.0625em solid #4b5563;
     background-color: #1f2937;
     border-radius: 0.5em;
     height: 3em;
     margin-top: 0.25em;
     padding-left: 1em;
+    font-size: 1em;
 
     &:hover {
       border-color: #0098d4dc;
