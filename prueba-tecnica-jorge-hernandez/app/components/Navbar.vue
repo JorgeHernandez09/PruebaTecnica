@@ -83,10 +83,6 @@ import texts from "~/texts/text.json";
       display: none;
       padding: 1em 0;
     }
-
-    &--active {
-      display: flex;
-    }
   }
 
   &__link {
