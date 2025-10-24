@@ -5,9 +5,13 @@ $text-dark: #e5e7eb;
 $text-light: #1f2937;
 $background-light: #f3f4f6;
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
-    font-family: "Montserrat", sans-serif;
+     font-family: 'Montserrat Variable', sans-serif;
     font-size: large;
     background-color: $background-dark;
     color: $text-dark;

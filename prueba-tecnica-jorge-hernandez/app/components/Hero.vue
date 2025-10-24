@@ -23,7 +23,7 @@ import texts from "~/texts/text.json";
 
 
 .hero {
-  min-height: 110dvh;
+  min-height: 85dvh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -56,7 +56,7 @@ import texts from "~/texts/text.json";
   &__title {
     font-size: 4.25em;
     font-weight: bold;
-    margin-bottom: 0.1em;
+    margin: 0 0 0.1em 0;
     color: $text-dark;
     
 
@@ -67,15 +67,15 @@ import texts from "~/texts/text.json";
 
   &__subtitle {
     font-size: 1.25em;
-    margin-bottom: 1.5em;
+    margin: 0 0 1.5em 0;
     color: $text-dark;
-    line-height: 1.25em;
+    line-height: 1.5em;
   }
 
   &__description {
     font-size: 1em;
     color: #9ca3af;
-    margin-bottom: 2em;
+    margin: 0 0 2em 0;
     line-height: 1.75em;
   }
 
@@ -98,13 +98,13 @@ import texts from "~/texts/text.json";
   &__button {
     background-color: $primary;
     color: #fff;
-     max-width: 10em;
+    width: fit-content;
     font-weight: bold;
     padding: 0.75em 2em;
     border-radius: 0.5em;
     text-decoration: none;
     transition: background-color 0.3s ease;
-    display: inline-block;
+  
    
 
     &:hover {

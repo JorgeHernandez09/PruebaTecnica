@@ -37,8 +37,7 @@ import texts from "~/texts/text.json";
   margin-bottom: 1em;
 
   &__container {
-    margin-top: 0;
-    margin-bottom: 2em;
+    margin: 0 0 2em 0;
     width: 100%;
     max-width: 75em;
     display: flex;
@@ -51,16 +50,6 @@ import texts from "~/texts/text.json";
       gap: 10em;
       column-gap: 20em;
       justify-content: center;
-
-      @media (max-width: 48em) {
-        grid-template-columns: auto auto;
-        gap: 4em;
-      }
-
-      @media (max-width: 30em) {
-        grid-template-columns: 1fr;
-        gap: 2em;
-      }
     }
   }
 

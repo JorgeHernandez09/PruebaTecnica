@@ -4,7 +4,6 @@ import texts from "~/texts/text.json";
 
 <template>
   <nav id="navbar" class="navbar">
-    <div class="navbar__container">
       <a href="#" class="navbar__logo">{{ texts.navbar.logo }}</a>
       <div class="navbar__links">
         <a href="#hero" class="navbar__link">{{ texts.navbar.links.inicio }}</a>
@@ -24,15 +23,13 @@ import texts from "~/texts/text.json";
           texts.navbar.links.contacto
         }}</a>
       </div>
-      <a href="#">
+      <a href="#"  class="navbar__icons">
         <img
           v-for="(image, index) in texts.navbar.icons"
           :key="index"
           :src="image"
-          class="navbar__icons"
         />
       </a>
-    </div>
   </nav>
 </template>
 
@@ -41,25 +38,24 @@ import texts from "~/texts/text.json";
 
 .navbar {
   background-color: $background-dark;
-  box-shadow: 0 0.125em 0.25em rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.125em 0.25em rgba(0, 0, 0, 0.175);
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  padding: 1em 2em;
+  padding: 0.75em 2em;
   z-index: 1000;
 
-  &__container {
-    max-width: 95em;
-    margin: 0 auto;
+  max-width: 100%;
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(3, auto);
     align-items: center;
-    position: relative;
-  }
+
+
 
   &__logo {
-    justify-self: center;
+    justify-self: left;
+    padding: 0 2.5em;
     font-size: 1.5em;
     font-weight: bold;
     color: $text-dark;
@@ -68,21 +64,10 @@ import texts from "~/texts/text.json";
 
   &__links {
     display: flex;
-    gap: 2em;
+    gap: 1.25em;
     font-size: 1.15em;
-    justify-self: center;
-
-    @media (max-width: 48em) {
-      position: absolute;
-      top: 100%;
-      left: 0;
-      right: 0;
-      background-color: $background-dark;
-      flex-direction: column;
-      align-items: center;
-      display: none;
-      padding: 1em 0;
-    }
+    justify-self: left;
+    padding: 0 3em;
   }
 
   &__link {
@@ -98,7 +83,12 @@ import texts from "~/texts/text.json";
 
   &__icons {
     width: 2em;
-    height: 2em;    
+    height: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    padding: 0 2em 0 0;
+    gap: 0.5em;
   }
 }
 </style>

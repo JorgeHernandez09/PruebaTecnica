@@ -49,8 +49,12 @@ import texts from "~/texts/text.json";
 
       &-primary {
         padding: 1.5em;
-        box-shadow: 0 0.125em 0.25em rgba(0, 0, 0, 0.2);
+        box-shadow: 0 0.125em 0.25em rgba(0, 0, 0, 0.6);
         border-radius: 2em;
+
+      &:hover{
+        box-shadow: 0 0.125em 0.25em rgba(1, 225, 255, 0.6);
+      }
       }
     }
 

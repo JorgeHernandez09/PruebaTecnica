@@ -1,6 +1,6 @@
 <template>
- <header>
-   <Navbar />
+  <header>
+    <Navbar />
   </header>
 
   <main>
@@ -10,16 +10,13 @@
     <Experience />
     <Projects />
     <Contact />
- </main>
+  </main>
 
   <footer>
     <Footer />
   </footer>
-   
 </template>
 
 <style scoped lang="scss">
 @import "~/assets/styles/reset.scss";
-
-
 </style>
